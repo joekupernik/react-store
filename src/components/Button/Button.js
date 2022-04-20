@@ -1,10 +1,9 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 
 
-function ButtonComponent () {
+function Button (props) {
 
   const { children, isLoading, ...rest } = props;
 
@@ -17,4 +16,4 @@ function ButtonComponent () {
 );
 }
 
-export default ButtonComponent;
+export default Button;
