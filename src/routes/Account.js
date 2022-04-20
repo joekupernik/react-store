@@ -13,6 +13,7 @@ function Account() {
         </main>
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/cart">cart</Link>
         </nav>
       </>
     );
