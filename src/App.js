@@ -10,11 +10,14 @@ import Orders from './routes/Orders';
 import ProductDetails from './routes/ProductDetails';
 import Register from './routes/Register';
 
+import Header from './components/Header/Header';
+
 
 
 function App() {
   return (
     <div className="App">
+    <Header />
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
