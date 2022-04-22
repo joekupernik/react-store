@@ -18,7 +18,7 @@ function Home() {
         <Container>
         <div class="row">
         <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -31,7 +31,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -44,7 +44,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -57,7 +57,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -70,7 +70,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -83,7 +83,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -99,7 +99,7 @@ function Home() {
         </div>
         <div class="row">
         <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -112,7 +112,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -125,7 +125,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -138,7 +138,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -151,7 +151,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
@@ -164,7 +164,7 @@ function Home() {
           </Card>
           </div> 
           <div class="col-md-4">
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
