@@ -1,10 +1,12 @@
 import React from "react";
+import ProductCard from '../components/ProductCard/ProductCard'
 
 
 function Home() {
     return (
       <>
-        <main>    
+        <main>
+
           <h2>Welcome to the homepage!</h2>
           <p>You can do this, I believe in you.</p>
           
