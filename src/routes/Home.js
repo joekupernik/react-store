@@ -13,7 +13,6 @@ function Home() {
     return (
       <>
         <main>
-
           <h1 style={{ padding: '.5rem', margin: '.5rem'}}>Welcome to my ecommerce store!</h1>
           <h2 style={{ padding: '.5rem', margin: '.5rem'}}>Products</h2>
           <hr
