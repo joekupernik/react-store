@@ -117,14 +117,14 @@ function Cart() {
                       </ListGroup>
                       <ListGroup horizontal>
                           
-                          <div>
+                          <ListGroup.Item>
                           <Button>Apply</Button>
-                          </div>
+                          </ListGroup.Item>
                          
         
-                            <div>
+                            <ListGroup.Item>
                               <p>Promo Code</p>
-                            </div>
+                            </ListGroup.Item>
                       </ListGroup>
                     </Col>
                   </Row>
