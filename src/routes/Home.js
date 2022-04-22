@@ -8,90 +8,97 @@ import Container from 'react-bootstrap/Container';
 
 
 
+
 function Home() {
     return (
       <>
         <main>
 
-          <h2>Welcome to the homepage!</h2>
-          <p>You can do this, I believe in you.</p>
+          <h1 style={{ padding: '.5rem', margin: '.5rem'}}>Welcome to my ecommerce store!</h1>
+          <h2 style={{ padding: '.5rem', margin: '.5rem'}}>Products</h2>
+          <hr
+        style={{
+            color: "black",
+            height: 3
+            }}
+           />
         <Container>
         <div class="row">
         <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
@@ -99,80 +106,80 @@ function Home() {
         </div>
         <div class="row">
         <div class="col-md-4">
-          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+        <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-          </Card>
-          </div> 
-          <div class="col-md-4">
-          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
           <div class="col-md-4">
           <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
-            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Img variant="top" src=".../logo.svg" />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>Item</Card.Title>
                 <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+                 Proiduct Description
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
+              </Card.Body>
+          </Card>
+          </div> 
+          <div class="col-md-4">
+          <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem'}}>
+            <Card.Img variant="top" src=".../logo.svg" />
+              <Card.Body>
+                <Card.Title>Item</Card.Title>
+                <Card.Text>
+                 Proiduct Description
+                </Card.Text>
+                <Card.Text>Price $100</Card.Text>
+                <Button variant="primary">Add to Cart</Button>
               </Card.Body>
           </Card>
           </div> 
