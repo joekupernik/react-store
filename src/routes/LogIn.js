@@ -15,7 +15,8 @@ function Account() {
   return (
     <>
       <main>
-        <h1>Log In</h1>
+        <div style={{padding: '10%', margin: '10%'}}>
+         <h1>Log In</h1>
         <Form>
           <Row className="align-items-center">
             <Col xs="auto">
@@ -52,6 +53,11 @@ function Account() {
             </Col>
           </Row>
         </Form>
+        <div style={{margin: '2%'}}>
+        <p>Forgot Password</p>
+        <p>Forgot Username</p>
+        </div>
+        </div>
       </main>
     </>
   );
