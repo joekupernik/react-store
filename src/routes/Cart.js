@@ -5,6 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup';
+import InputGroup from 'react-bootstrap/InputGroup';
+import FormControl from 'react-bootstrap/FormControl';
+
 
 
 
@@ -20,6 +23,7 @@ function Cart() {
             height: 3
           }}
         />
+        <div style={{margin: '2%', padding: '1%'}}>
         <Container>
           <Row>
             <Col>
@@ -115,17 +119,21 @@ function Cart() {
                           </p>
                         </ListGroup.Item>
                       </ListGroup>
-                      <ListGroup horizontal>
-                          
-                          <ListGroup.Item>
-                          <Button>Apply</Button>
-                          </ListGroup.Item>
-                         
-        
-                            <ListGroup.Item>
-                              <p>Promo Code</p>
-                            </ListGroup.Item>
-                      </ListGroup>
+                      
+                        <InputGroup className="mb-3">
+                          <Button variant="primary" id="button-addon1">
+                            Add Promo Code
+                          </Button>
+                          <FormControl
+                            aria-label="Example text with button addon"
+                            aria-describedby="basic-addon1"
+                            placeholder="Promo Code"
+                          />
+                        </InputGroup>
+
+                      <Button variant="primary" type="submit">
+              Submit
+            </Button>
                     </Col>
                   </Row>
                 </div>
@@ -133,6 +141,7 @@ function Cart() {
             </Col>
           </Row>
         </Container>
+        </div>
       </main>
     </>
   );
