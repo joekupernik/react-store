@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -8,9 +8,25 @@ import Container from 'react-bootstrap/Container';
 
 
 
-
 function Home() {
-    return (
+  
+  const [fake, setFake] = useState ([]);
+  console.log(fake);
+  useEffect(()=>{
+    products ();
+  },[])
+
+  const products = async () => {
+    await fetch('https://fakestoreapi.com/products');
+    //console.log(response);
+    const jsonData = await response.json();
+    //console.log (jsonData);
+    setFake(jsonData)
+  }
+  
+  
+  
+  return (
       <>
         <main>
           <h1 style={{ padding: '.5rem', margin: '.5rem'}}>Welcome to my ecommerce store!</h1>
@@ -21,6 +37,15 @@ function Home() {
             height: 3
             }}
            />
+           <div className="container">
+           {fake.map((values)=>{
+             return (
+               <>
+                 
+               </>
+             )
+
+           })}
         <Container>
         <div class="row">
         <div class="col-md-4">
@@ -185,6 +210,7 @@ function Home() {
 
         </div>
         </Container>
+        </div>
         </main>
       </>
     );
