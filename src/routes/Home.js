@@ -10,19 +10,7 @@ import Container from 'react-bootstrap/Container';
 
 function Home() {
   
-  const [fake, setFake] = useState ([]);
-  console.log(fake);
-  useEffect(()=>{
-    products ();
-  },[])
-
-  const products = async () => {
-    await fetch('https://fakestoreapi.com/products');
-    //console.log(response);
-    const jsonData = await response.json();
-    //console.log (jsonData);
-    setFake(jsonData)
-  }
+  
   
   
   
@@ -38,14 +26,6 @@ function Home() {
             }}
            />
            <div className="container">
-           {fake.map((values)=>{
-             return (
-               <>
-                 
-               </>
-             )
-
-           })}
         <Container>
         <div class="row">
         <div class="col-md-4">
