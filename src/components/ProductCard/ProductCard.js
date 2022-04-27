@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
+//import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -35,14 +37,15 @@ function ProductCard() {
             }}
           />
           <div className="container">
-            {fake.map((values) => {
+            <Row>
+             {fake.map((values) => {
               return (
                 <>
-                <Container fluid>
-                    <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem' }}>
+                <Col sm={6} md={4} className='mt-3'>
+                    <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem', height: '100%' }}>
                       <Card.Img variant="top" src={values.image} />
                       <Card.Body>
-                        <Card.Title>{values.name}</Card.Title>
+                        <Card.Title>{values.title}</Card.Title>
                         <Card.Text>
                           {values.description}
                         </Card.Text>
@@ -50,11 +53,11 @@ function ProductCard() {
                         <Button variant="primary">Add to Cart</Button>
                       </Card.Body>
                     </Card>
-                  </Container>
+                  </Col>
                 </>
               )
             })}
-            
+            </Row>
           </div>
         </main>
       </>
