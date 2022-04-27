@@ -46,7 +46,7 @@ function ProductCard() {
                       <Card.Img variant="top" src={values.image} />
                       <Card.Body>
                         <Card.Title>{values.title}</Card.Title>
-                        <Card.Text>
+                        <Card.Text style={{maxheight:' 20rem'}}>
                           {values.description}
                         </Card.Text>
                         <Card.Text>{values.price}</Card.Text>
