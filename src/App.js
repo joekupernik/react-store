@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import { Routes, Route,} from "react-router-dom";
 import Home from './routes/Home';
@@ -17,7 +17,22 @@ import Header from './components/Header/Header';
 
 
 function App() {
+  
 
+  const [fake, setFake] = useState([]);
+  const fakeData = async () => {
+  const response = await fetch(
+    'https://fakestoreapi.com/products'
+    );
+   const data = await response.json();
+    setFake(data);
+  };
+
+   useEffect(() => {
+    fakeData()
+  }, []);
+
+   
   return (
     <div className="App">
     <Header />
