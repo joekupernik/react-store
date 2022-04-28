@@ -1,24 +1,54 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
-function CartitemCard () {
+
+function CartItemCard () {
   
 
-return (
-<Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
-);
+  const [fake, setFake] = useState([]);
+  const fakeData = async () => {
+    const response = await fetch(
+      'https://fakestoreapi.com/products/1'
+    );
+    const data = await response.json();
+    setFake(data);
+  };
+
+  useEffect(() => {
+    fakeData()
+  }, []);  
+
+  return (
+    <>
+      <main>
+        <h2 style={{ padding: '.5rem', margin: '.5rem' }}>Products</h2>
+        <div className="container">
+          <Row>
+           {fake.map((values) => {
+            return (
+              <>
+              <Col sm={6} md={4} className='mt-3'>
+                  <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem', height: '30rem', overflow: 'hidden', boxshadow: 'lightblue' }}>
+                    <Card.Img variant="top" src={values.image} style={{height: '10rem', width: 'auto'}}/>
+                    <Card.Body>
+                      <Card.Title>{values.title}</Card.Title>
+                      <Card.Text>{values.price}</Card.Text>
+                      <Button variant="primary">+/-</Button>                      
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </>
+            )
+          })}
+          </Row>
+        </div>
+      </main>
+    </>
+  );
 }
 
-export default CartitemCard;
+export default CartItemCard;
