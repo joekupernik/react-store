@@ -12,7 +12,9 @@ import ProductDetails from './routes/ProductDetails';
 import Register from './routes/Register';
 
 
+
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -34,6 +36,7 @@ function App() {
         <Route path="productdetails" element={<ProductDetails />} />
         <Route path="register" element={<Register />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

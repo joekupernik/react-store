@@ -1,10 +1,13 @@
 import React from "react";
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
+//import Col from 'react-bootstrap/Col';
+//import Form from 'react-bootstrap/Form';
+//import Row from 'react-bootstrap/Row';
+//import Button from 'react-bootstrap/Button';
+//import InputGroup from 'react-bootstrap/InputGroup';
+//import FormControl from 'react-bootstrap/FormControl';
+import LoginForm from "../components/LoginForm/LoginForm";
+import Card from 'react-bootstrap/Card';
+
 
 
 
@@ -14,51 +17,28 @@ import FormControl from 'react-bootstrap/FormControl';
 function Account() {
   return (
     <>
-      <main>
-        <div style={{padding: '10%', margin: '10%'}}>
-         <h1>Log In</h1>
-        <Form>
-          <Row className="align-items-center">
-            <Col xs="auto">
-              <Form.Label htmlFor="inlineFormInput" visuallyHidden>
-                Name
-              </Form.Label>
-              <Form.Control
-                className="mb-2"
-                id="inlineFormInput"
-                placeholder="Jane Doe"
-              />
-            </Col>
-            <Col xs="auto">
-              <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
-                Username
-              </Form.Label>
-              <InputGroup className="mb-2">
-                <InputGroup.Text>@</InputGroup.Text>
-                <FormControl id="inlineFormInputGroup" placeholder="Username" />
-              </InputGroup>
-            </Col>
-            <Col xs="auto">
-              <Form.Check
-                type="checkbox"
-                id="autoSizingCheck"
-                className="mb-2"
-                label="Remember me"
-              />
-            </Col>
-            <Col xs="auto">
-              <Button type="submit" className="mb-2">
-                Submit
-              </Button>
-            </Col>
-          </Row>
-        </Form>
+       <h1 style={{padding: '2%', margin: '2%'}}>Join Us!</h1>
+       <hr
+            style={{
+              color: "black",
+              height: 3
+            }}
+          />
+        <div style={{margin: '10%'}}>
+        <Card>
+          <Card.Header>
+          Log In
+          </Card.Header>
+          <Card.Body  style={{ margin: 'auto' }}>
+            <LoginForm />
+          </Card.Body>
+        </Card>
         <div style={{margin: '2%'}}>
         <p>Forgot Password</p>
         <p>Forgot Username</p>
+        <p>Create Account</p>
         </div>
         </div>
-      </main>
     </>
   );
 }
