@@ -42,15 +42,16 @@ function ProductCard() {
               return (
                 <>
                 <Col sm={6} md={4} className='mt-3'>
-                    <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem', height: '100%' }}>
-                      <Card.Img variant="top" src={values.image} />
+                    <Card style={{ width: '18rem', padding: '.5rem', margin: '.5rem', height: '30rem', overflow: 'hidden', boxshadow: 'lightblue' }}>
+                      <Card.Img variant="top" src={values.image} style={{height: '10rem', width: 'auto'}}/>
                       <Card.Body>
                         <Card.Title>{values.title}</Card.Title>
-                        <Card.Text style={{maxheight:' 20rem'}}>
+                        <Card.Text>{values.price}</Card.Text>
+                        <Button variant="primary">View</Button>
+                        <Card.Text >
                           {values.description}
                         </Card.Text>
-                        <Card.Text>{values.price}</Card.Text>
-                        <Button variant="primary">Add to Cart</Button>
+                        
                       </Card.Body>
                     </Card>
                   </Col>
