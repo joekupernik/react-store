@@ -8,21 +8,16 @@ import Card from 'react-bootstrap/Card';
 import CheckoutForm from '../components/CheckoutForm/CheckoutForm';
 
 
-function Account() {
+function Checkout() {
   return (
     <>
       <main>
         <h1>Checkout</h1>
         <div style={{ padding: '2%', margin: '3%' }}>
-        <h2>Billing address</h2>
+        <h2>Shipping address</h2>
           <Card>
             <CheckoutForm />
-          </Card>
-        <h2>Shipping address</h2>
-        
-
-        <h2>Payment</h2>
-            
+          </Card>   
         </div>
       </main>
 
@@ -30,4 +25,4 @@ function Account() {
   );
 }
 
-export default Account;
+export default Checkout;
