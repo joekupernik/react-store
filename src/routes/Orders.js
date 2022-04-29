@@ -1,18 +1,43 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import OrderCard from '../components/OrderCard/OrderCard';
+
+//import { Link } from 'react-router-dom';
+ 
 
 
-function Account() {
+
+
+
+
+function Orders() {
+
+  
     return (
-      <>
+        <>
         <main>
-          <h2>Who are we?</h2>
-          <p>
-            That feels like an existential question, don't you
-            think?
-          </p>
-        </main>
-      </>
+          <h1 style={{ padding: '.5rem', margin: '.5rem' }}>Orders</h1>
+          <hr
+            style={{
+              color: "black",
+              height: 3
+            }}
+          />
+          <h2 style={{ padding: '.5rem', margin: '.5rem' }}>previous orders</h2>
+          <hr
+            style={{
+              color: "black",
+              height: 3
+            }}
+          />
+        <Container>
+            <OrderCard />
+        </Container>
+    </main>
+    </>
     );
-  }
 
-  export default Account;
+  
+}
+
+export default Orders;

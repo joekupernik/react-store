@@ -1,28 +1,35 @@
-import React, {useState} from "react";
-import Button from 'react-bootstrap/Button';
-import OrderCard from '../components/OrderCard/OrderCard';
+import React from "react";
+//import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
+
+
 
 
 
 function OrderDetails() {
-  const [modalShow, setModalShow] = useState(false);
+
 
   return (
     <>
-    <div>
-      <h1>Order Details</h1>
-      <div style={{margin: '8%'}}>
-        <h2>Thank you for you buisnesss John!</h2>
+      <h1>Order #</h1>
+      <div>
+        <Table striped bordered hover size="sm">
+          <thead>
+            <tr>
+              <th>Order Number</th>
+              <th>Items</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>123</td>
+              <td>Otto</td>
+              <td>45$</td>
+            </tr>
+          </tbody>
+        </Table>
       </div>
-    </div>
-      <Button style={{margin: '5%'}} variant="primary" onClick={() => setModalShow(true)}>
-        Show Order Details
-      </Button>
-
-      <OrderCard
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
     </>
   );
 }
