@@ -6,16 +6,17 @@ function Account() {
     return (
       <>
         <main>
-          <h2>Who are we?</h2>
-          <p>
-            That feels like an existential question, don't you
-            think?
-          </p>
+          <h1>Welcome John</h1>
+          <hr
+            style={{
+              color: "black",
+              height: 3
+            }}
+          />
         </main>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/cart">cart</Link>
-        </nav>
+        <div>
+          
+        </div>
       </>
     );
   }

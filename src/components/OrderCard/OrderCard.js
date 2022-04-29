@@ -1,75 +1,42 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-//import Button from "react-bootstrap/Button";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import ListGroup from 'react-bootstrap/ListGroup';
-//import InputGroup from 'react-bootstrap/InputGroup';
-//import FormControl from 'react-bootstrap/FormControl';
+import Button from "react-bootstrap/Button";
+import Modal from 'react-bootstrap/Modal';
 
 
 
-function OrderCard() {
 
+
+function OrderCard(props) {
     return (
-        <>
-            <Card>
-                <Row>
-                    <Col>
-                        <ListGroup as="ol" >
-                            <ListGroup.Item
-                                as="li"
-                                className="d-flex justify-content-between align-items-start"
-                            >
-                                <div className="ms-2 me-auto">
-                                    <div className="fw-bold">Item</div>
-                                    Description
-                                </div>
-                                <p>
-                                    $14
-                                </p>
-                            </ListGroup.Item>
-                            <ListGroup.Item
-                                as="li"
-                                className="d-flex justify-content-between align-items-start"
-                            >
-                                <div className="ms-2 me-auto">
-                                    <div className="fw-bold">item</div>
-                                    Description
-                                </div>
-                                <p >
-                                    $14
-                                </p>
-                            </ListGroup.Item>
-                            <ListGroup.Item
-                                as="li"
-                                className="d-flex justify-content-between align-items-start"
-                            >
-                                <div className="ms-2 me-auto">
-                                    <div className="fw-bold">Item</div>
-                                    Description
-                                </div>
-                                <p >
-                                    $14
-                                </p>
-                            </ListGroup.Item>
-                            <ListGroup.Item
-                                as="li"
-                                className="d-flex justify-content-between align-items-start"
-                            >
-                                <div className="ms-2 me-auto">
-                                    <div className="fw-bold">Total</div>
-                                </div>
-                                <p >
-                                    $14
-                                </p>
-                            </ListGroup.Item>
-                        </ListGroup>
-                    </Col>
-                </Row>
-            </Card>
-        </>
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+             Order Number 12434
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Date: 4/22/22</h4>
+          <ul>
+              <li>item:   Price;   Qty:</li>
+              <li>item:   Price;   Qty:</li>
+              <li>item:   Price;   Qty:</li>
+          </ul>
+          <p>
+            Thank you so much for your order. please let me know if you have any issues.  
+          </p>
+          <p>Track your order</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
     );
-}
-
+  }
+  
+    
 export default OrderCard;

@@ -2,11 +2,12 @@ import React from "react";
 //import Col from 'react-bootstrap/Col';
 //import Form from 'react-bootstrap/Form';
 //import Row from 'react-bootstrap/Row';
-//import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 //import InputGroup from 'react-bootstrap/InputGroup';
 //import FormControl from 'react-bootstrap/FormControl';
 import LoginForm from "../components/LoginForm/LoginForm";
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,9 +35,11 @@ function Account() {
           </Card.Body>
         </Card>
         <div style={{margin: '2%'}}>
-        <p>Forgot Password</p>
-        <p>Forgot Username</p>
-        <p>Create Account</p>
+        <div><Button style={{margin: '.5rem'}}>Forgot Password</Button></div>
+        <div><Button style={{margin: '.5rem'}}>Forgot Username</Button></div>
+        <div><Link to='/Register'>
+        <Button style={{margin: '.5rem'}}>Create Account</Button>
+        </Link></div>
         </div>
         </div>
     </>
