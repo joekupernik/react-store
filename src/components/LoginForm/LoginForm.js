@@ -41,9 +41,11 @@ function LoginForm() {
                         />
                     </Col>
                     <Col xs="auto">
+                      <Link to="/Account">
                         <Button type="submit" className="mb-2">
                             Submit
                         </Button>
+                      </Link>
                     </Col>
                 </Row>
             </Form>
