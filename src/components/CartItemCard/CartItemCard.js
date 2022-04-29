@@ -22,7 +22,6 @@ function CartItemCard() {
           <Card.Title>title</Card.Title>
           <Card.Text>price</Card.Text>
             <Incrementer />
-          <Button variant="primary" style={{margin: '1rem'}}>Remove</Button>
         </Card.Body>
       </Card>
     </>
