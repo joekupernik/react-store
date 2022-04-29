@@ -1,30 +1,18 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 
 
+function Account() {
+    return (
+      <>
+        <main>
+          <h2>Who are we?</h2>
+          <p>
+            That feels like an existential question, don't you
+            think?
+          </p>
+        </main>
+      </>
+    );
+  }
 
-
-
-function OrderDetails() {
-
-
-  return (
-    <>
-      <Card className="text-center">
-        <Card.Header>Featured</Card.Header>
-        <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
-          <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-        <Card.Footer className="text-muted">2 days ago</Card.Footer>
-      </Card>
-    </>
-  );
-}
-
-
-export default OrderDetails;
+  export default Account;

@@ -1,8 +1,5 @@
 import React from "react";
 import {Link } from "react-router-dom";
-//import Col from 'Col';
-//import Row from 'Row';
-//import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 
@@ -25,7 +22,7 @@ function Account() {
           <p>name</p>
           <p>name</p>
           <p>name</p>
-          <Link to="OrderDetails">
+          <Link to="/orders">
                     <Button variant="primary">View</Button>
                     </Link>
      

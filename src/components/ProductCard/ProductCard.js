@@ -1,9 +1,9 @@
-
 import React, { useEffect, useState } from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 
 
@@ -37,7 +37,9 @@ function ProductCard() {
                       <Card.Body>
                         <Card.Title>{values.title}</Card.Title>
                         <Card.Text>{values.price}</Card.Text>
+                        <Link to="/productdetails">
                         <Button variant="primary">View</Button>
+                        </Link>
                         <Card.Text >
                           {values.description}
                         </Card.Text>

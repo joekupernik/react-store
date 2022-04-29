@@ -26,7 +26,7 @@ function OrderCard() {
                     <Card.Text >
                       Order Details
                     </Card.Text>
-                    <Link to="OrderDetails">
+                    <Link to="/orderdetails">
                     <Button variant="primary">View</Button>
                     </Link>
                   </Card.Body>
