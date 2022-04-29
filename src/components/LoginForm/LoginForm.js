@@ -1,57 +1,43 @@
-import React from "react";
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Formik, Field, Form } from 'formik';
 
-function LoginForm() {
+const LoginForm = () => {
+  
+  
+  return (
+  <div>
+    <h1>Sign Up</h1>
+    <Formik
+      initialValues={{
+        firstName: '',
+        lastName: '',
+        email: '',
+      }}
+      onSubmit={async (values) => {
+        await new Promise((r) => setTimeout(r, 500));
+        alert(JSON.stringify(values, null, 2));
+      }}
+    >
+      <Form>
+        <label htmlFor="firstName">First Name</label>
+        <Field id="firstName" name="firstName" placeholder="Jane" />
 
+        <label htmlFor="lastName">Last Name</label>
+        <Field id="lastName" name="lastName" placeholder="Doe" />
 
-    return (
-        <>
-            <Form>
-                <Row className="align-items-center">
-                    <Col xs="auto">
-                        <Form.Label htmlFor="inlineFormInput" visuallyHidden>
-                            Name
-                        </Form.Label>
-                        <Form.Control
-                            className="mb-2"
-                            id="inlineFormInput"
-                            placeholder="Jane Doe"
-                        />
-                    </Col>
-                    <Col xs="auto">
-                        <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
-                            Username
-                        </Form.Label>
-                        <InputGroup className="mb-2">
-                            <InputGroup.Text>@</InputGroup.Text>
-                            <FormControl id="inlineFormInputGroup" placeholder="Username" />
-                        </InputGroup>
-                    </Col>
-                    <Col xs="auto">
-                        <Form.Check
-                            type="checkbox"
-                            id="autoSizingCheck"
-                            className="mb-2"
-                            label="Remember me"
-                        />
-                    </Col>
-                    <Col xs="auto">
-                      <Link to="/Account">
-                        <Button type="submit" className="mb-2">
-                            Submit
-                        </Button>
-                      </Link>
-                    </Col>
-                </Row>
-            </Form>
-        </>
-    );
-}
+        <label htmlFor="email">Email</label>
+        <Field
+          id="email"
+          name="email"
+          placeholder="jane@acme.com"
+          type="email"
+        />
+        <button type="submit">Submit</button>
+      </Form>
+    </Formik>
+  </div>
+  );
+};
 
 export default LoginForm;
+
