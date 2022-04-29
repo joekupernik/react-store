@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 //import Row from 'react-bootstrap/Row';
 //import Col from 'react-bootstrap/Col';
 //import Container from 'react-bootstrap/Container';
-
+import Incrementer from "../Incrementer/Incrementer";
 
 
 
@@ -21,7 +21,7 @@ function CartItemCard() {
         <Card.Body className="text-center" variant="top">
           <Card.Title>title</Card.Title>
           <Card.Text>price</Card.Text>
-          <Button variant="primary">+/-</Button>
+            <Incrementer />
           <Button variant="primary" style={{margin: '1rem'}}>Remove</Button>
         </Card.Body>
       </Card>
