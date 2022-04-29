@@ -1,9 +1,9 @@
 import React from "react";
-//import {Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 //import Col from 'Col';
 //import Row from 'Row';
 //import Card from 'react-bootstrap/Card';
-//import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -25,6 +25,9 @@ function Account() {
           <p>name</p>
           <p>name</p>
           <p>name</p>
+          <Link to="OrderDetails">
+                    <Button variant="primary">View</Button>
+                    </Link>
      
         </main>
       </>
