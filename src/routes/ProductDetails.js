@@ -1,18 +1,28 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
 
 
-function Account() {
+
+function ProductDetails() {
     return (
       <>
-        <main>
-          <h2>Who are we?</h2>
-          <p>
-            That feels like an existential question, don't you
-            think?
-          </p>
-        </main>
+      <div style={{ width: '100%', margin: '5%', }}>
+          <Card style={{ width: '80%', padding: '5%', margin: '5%', height: '100%', boxshadow: 'lightblue' }}>
+                      <Card.Img variant="top" src="" style={{height: 'auto', width: 'auto'}}/>
+                      <Card.Body>
+                        <Card.Title>title</Card.Title>
+                        <Card.Text>price</Card.Text>
+                        <Button variant="primary">add to cart</Button>
+                        <Card.Text >
+                         Description 
+                        </Card.Text>
+                        
+                      </Card.Body>
+                    </Card>
+                    </div>
       </>
     );
   }
 
-  export default Account;
+  export default ProductDetails;
