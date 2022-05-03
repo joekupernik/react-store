@@ -1,5 +1,7 @@
 import React from 'react'
 import { useField } from 'formik';
+import Form from 'react-bootstrap/Form';
+
 
 
 function TextField (props) {
@@ -7,12 +9,11 @@ function TextField (props) {
     const [ field, { error } ] = useField({ name, type: name });
     
     return (
-        <MUITextField
+        <Form.Control
         {...field}
         {...rest}
         error={!!error}
         helperText={error}
-        variant="outlined"
       />
     );
 }
