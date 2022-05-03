@@ -1,22 +1,33 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import Figure from 'react-bootstrap/Figure';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 
 
 const Incrementer = (props) => {
-
     const { value, onDecrement, onIncrement } = props;
+    
 
     return (
-        <div>
+        <>
+        <Row>
+          <Col>
             <Button aria-label="remove from shopping cart" onClick={onDecrement}> -
             </Button>
-            <Figure variant="outlined" value={value}>number
-            </Figure> 
+          </Col>
+          <Col>
+            <Form.Control type="text"  rows={1}  input={value} />
+          </Col>
+          <Col>
             <Button aria-label="add to shopping cart" onClick={onIncrement}> +
             </Button>
-        </div>
+          </Col>
+        </Row>
+       </> 
     );
 }
 
