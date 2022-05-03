@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Account() {
+function Login() {
   return (
     <>
        <h1 style={{padding: '2%', margin: '2%'}}>Join Us!</h1>
@@ -41,4 +41,4 @@ function Account() {
   );
 }
 
-export default Account;
+export default Login;
