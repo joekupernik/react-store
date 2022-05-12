@@ -2,10 +2,9 @@ import React from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import ListGroup from 'react-bootstrap/ListGroup';
+//import Button from 'react-bootstrap/Button';
 import CartItemCard from "../components/CartItemCard/CartItemCard";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 
 
@@ -15,13 +14,20 @@ import { Link } from 'react-router-dom';
 function Cart() {
   return (
     <>
+    <h1>Cart</h1>
+    <hr
+            style={{
+              color: "black",
+              height: 3
+            }}
+          />
       <Card>
         <Row>
           <Col>
             <h2>Items</h2>
             <Card>
-              <Card>
-                <Card.Body style={{ margin: 'auto' }}>
+              <Card style={{ width: '100%' }}>
+                <Card.Body style={{ margin: '2%'}}>
                   <CartItemCard />
                 </Card.Body>
               </Card>
@@ -29,69 +35,12 @@ function Cart() {
           </Col>
           <Col>
             <Card>
-              <h2>Order Summary</h2>
+              <h2>Payment</h2>
               <Row>
                 <Col>
                   <Card>
-                    <Row>
-                      <Col>
-                        <ListGroup as="ol" >
-                          <ListGroup.Item
-                            as="li"
-                            className="d-flex justify-content-between align-items-start"
-                          >
-                            <div className="ms-2 me-auto">
-                              <div className="fw-bold">Item</div>
-                              Description
-                            </div>
-                            <p>
-                              $14
-                            </p>
-                          </ListGroup.Item>
-                          <ListGroup.Item
-                            as="li"
-                            className="d-flex justify-content-between align-items-start"
-                          >
-                            <div className="ms-2 me-auto">
-                              <div className="fw-bold">item</div>
-                              Description
-                            </div>
-                            <p >
-                              $14
-                            </p>
-                          </ListGroup.Item>
-                          <ListGroup.Item
-                            as="li"
-                            className="d-flex justify-content-between align-items-start"
-                          >
-                            <div className="ms-2 me-auto">
-                              <div className="fw-bold">Item</div>
-                              Description
-                            </div>
-                            <p >
-                              $14
-                            </p>
-                          </ListGroup.Item>
-                          <ListGroup.Item
-                            as="li"
-                            className="d-flex justify-content-between align-items-start"
-                          >
-                            <div className="ms-2 me-auto">
-                              <div className="fw-bold">Total</div>
-                            </div>
-                            <p >
-                              $14
-                            </p>
-                          </ListGroup.Item>
-                        </ListGroup>
-                      </Col>
-                    </Row>
+  
                   </Card>
-                  <Link to="/Checkout">
-                  <Button variant="primary" type="submit" style={{ margin: '2rem' }}>
-                    Checkout
-                  </Button>
-                  </Link>
                 </Col>
               </Row>
 
