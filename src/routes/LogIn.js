@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import LoginForm from "../components/LoginForm/LoginForm";
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
@@ -27,15 +26,16 @@ function Login() {
           </Card.Header>
           <Card.Body  style={{ margin: 'auto' }}>
             <LoginForm />
-          </Card.Body>
-        </Card>
-        <div style={{margin: '2%'}}>
-        <div><Button style={{margin: '.5rem'}}>Forgot Password</Button></div>
-        <div><Button style={{margin: '.5rem'}}>Forgot Username</Button></div>
+            <div style={{margin: '2%'}}>
+        <div><Link to='/Register'>Forgot Password</Link></div>
+        <div><Link to='/Register'>Forgot Username</Link></div>
         <div><Link to='/Register'>
-        <Button style={{margin: '.5rem'}}>Create Account</Button>
+        Create Account
         </Link></div>
         </div>
+          </Card.Body>
+        </Card>
+        
         </div>
     </>
   );
