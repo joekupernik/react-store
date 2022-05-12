@@ -44,7 +44,7 @@ const LoginForm = () => {
         {({ errors, touched }) => (
           <Form>
 
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" style={{margin: '2%'}}>Email</label>
             <Field
               id="email"
               name="email"
@@ -54,7 +54,7 @@ const LoginForm = () => {
             
             {errors.email && touched.email ? <div>{errors.email}</div> : null}
 
-            <label htmlFor="Password">Create Password</label>
+            <label htmlFor="Password" style={{margin: '2%'}}>Create Password</label>
             <Field
               type= "password"
               name="password"
