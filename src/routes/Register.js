@@ -53,6 +53,7 @@ const LoginForm = () => {
               placeholder="jane@acme.com"
               type="email"
             />
+            
             {errors.email && touched.email ? <div>{errors.email}</div> : null}
 
             <label htmlFor="Password">Create Password</label>
