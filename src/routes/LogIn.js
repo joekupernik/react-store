@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 function Login() {
   return (
     <>
-       <h1>Sign In</h1>
        <hr
             style={{
               color: "black",
