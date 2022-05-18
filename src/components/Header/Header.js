@@ -20,11 +20,11 @@ function Header (){
     <img src={Logo} alt="logo" style={{ height: '2.5rem'}} className="d-inline-block align-top" />
     </Link>
      </Navbar.Brand>
-    <Nav className="me-auto">
-  
+    <Nav className="justify-content-center">
+    <Nav.Item>
+    <Link to="/Login" style={{color: 'white', textDecoration: 'none', fontSize: '1.75rem'}}>Login</Link>
+    </Nav.Item>
     </Nav>
-    <Nav className="justify-content-end">
-    <Nav.Link><Link to="/Login" style={{color: 'white'}}>Login</Link></Nav.Link>
     <Nav.Link> 
     <Link to="/Cart">
     
@@ -35,7 +35,7 @@ function Header (){
     </Link>
 
 </Nav.Link>
-    </Nav>
+    
     </Container>
   </Navbar>
        </>
