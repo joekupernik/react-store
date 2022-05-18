@@ -1,23 +1,16 @@
-import React from "react";
-import Card from 'react-bootstrap/Card';
+import React from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
 
 import CheckoutForm from '../components/CheckoutForm/CheckoutForm';
 
+const stripe = loadStripe("pk_test_1b7TDT5I1aLlj6UAhEejbqrh");
 
 function Checkout() {
   return (
-    <>
-      <main>
-        <h1>Checkout</h1>
-        <div style={{ padding: '2%', margin: '3%' }}>
-        <h2>Shipping address</h2>
-          <Card>
-            <CheckoutForm />
-          </Card>   
-        </div>
-      </main>
-
-    </>
+    <Elements stripe={stripe}>
+        <CheckoutForm />
+    </Elements>
   );
 }
 
