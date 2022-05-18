@@ -25,7 +25,7 @@ function Cart() {
           <Col>
             <h2>Items</h2>
             <Card>
-              <Card style={{ width: '100%' }}>
+              <Card style={{ width: '100%', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)' }}>
                 <Card.Body style={{ margin: '2%'}}>
                   <CartItemCard />
                 </Card.Body>
@@ -37,7 +37,7 @@ function Cart() {
               <h2>Payment</h2>
               <Row>
                 <Col>
-                  <Card>
+                  <Card style={{ width: '100%', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)'}}>
   
                   </Card>
                 </Col>

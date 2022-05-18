@@ -33,15 +33,14 @@ const LoginForm = () => {
 
   return (
     <div>
-      <h1>Sign Up</h1>
       <hr
         style={{
           color: "black",
           height: 3
         }}
       />
-      <div style={{ margin: '10%' }}>
-        <Card>
+      <div style={{ margin: '10%'}}>
+        <Card style={{boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)'}}>
           <Card.Header>
             Create Account
           </Card.Header>

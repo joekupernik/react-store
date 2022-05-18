@@ -32,7 +32,7 @@ function ProductCard() {
             return (
               <>
                 <Col sm={6} md={4} className='mt-3'>
-                  <Card style={{ width: 'auto', height: '18rem', padding: '.5rem', margin: '1rem', overflow: 'hidden', boxshadow: 'lightblue', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)' }}>
+                  <Card style={{ width: 'auto', height: '18rem', padding: '.5rem', margin: '1rem', overflow: 'hidden', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)' }}>
                     <Card.Img variant="top" src={values.image} style={{ height: '5rem', width: 'auto', padding: '1rem' }} />
                     <Card.Body>
                       <Card.Title style={{

@@ -19,7 +19,7 @@ function Login() {
             }}
           />
         <div style={{margin: '10%'}}>
-        <Card>
+        <Card style={{boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)'}}>
           <Card.Header>
           Log In
           </Card.Header>
