@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import CartItemCard from "../components/CartItemCard/CartItemCard";
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -35,7 +35,9 @@ function Cart() {
               <Card.Text>price</Card.Text>
             </Col>
             <Col md='4'>
+              <Link to='/checkout'>
               <Button>Checkout</Button>
+              </Link>
             </Col>
             </Row>
           </Card.Body>
