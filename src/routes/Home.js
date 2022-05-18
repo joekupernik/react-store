@@ -1,6 +1,8 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import ProductCard from '../components/ProductCard/ProductCard';
+import background from '../asset/background.jpg';
+
 
 
 
@@ -14,14 +16,15 @@ function Home() {
     return (
         <>
         <main>
-          <h1 style={{ padding: '.5rem', margin: '.5rem' }}>Welcome to my ecommerce store!</h1>
-          <hr
-            style={{
-              color: "black",
-              height: 3
-            }}
-          />
-          <h2 style={{ padding: '.5rem', margin: '.5rem' }}>Products</h2>
+          <div   class="bg_image"
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundSize:'cover',
+          height: '15rem'
+        }}>
+          
+          <h1 style={{ padding: '2rem', margin: '.5rem', color: 'white' }}>Products</h1>
+          </div>
           <hr
             style={{
               color: "black",
