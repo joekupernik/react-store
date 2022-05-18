@@ -31,10 +31,12 @@ function Home() {
               height: 3
             }}
           />
+          <div style={{backgroundColor: '#E9F7F9', opacity: '90%'}}>
         <Container>
             <ProductCard
             />
         </Container>
+        </div>
     </main>
     </>
     );
