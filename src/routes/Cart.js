@@ -14,7 +14,6 @@ import CartItemCard from "../components/CartItemCard/CartItemCard";
 function Cart() {
   return (
     <>
-    <h1>Cart</h1>
     <hr
             style={{
               color: "black",

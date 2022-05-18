@@ -22,8 +22,6 @@ function Home() {
           backgroundSize:'cover',
           height: '15rem'
         }}>
-          
-          <h1 style={{ padding: '2rem', margin: '.5rem', color: 'white' }}>Products</h1>
           </div>
           <hr
             style={{
