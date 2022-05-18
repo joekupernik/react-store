@@ -23,7 +23,7 @@ function App() {
 
    
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: '#E9F7F9'}}>
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
