@@ -86,7 +86,7 @@ const LoginForm = () => {
                   />
                   {errors.confirmPassword && touched.confirmPassword ? <div>{errors.confirmPassword}</div> : null}
 
-                  <button type="submit">Submit</button>
+                  <button type="submit" style={{ margin: '2%' }}>Submit</button>
                 </Form>
               )}
             </Formik>
