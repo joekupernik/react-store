@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 function Login() {
   return (
     <>
-       <h1 style={{padding: '2%', margin: '2%'}}>Join Us!</h1>
+       <h1>Sign In</h1>
        <hr
             style={{
               color: "black",

@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 
 const SignupSchema = Yup.object().shape({
@@ -90,6 +91,7 @@ const LoginForm = () => {
                 </Form>
               )}
             </Formik>
+            <div><Link to='/Login'>Already Have an Account? Log In </Link></div>
           </Card.Body>
         </Card>
       </div>
