@@ -15,7 +15,7 @@ function CartItemCard() {
 
   return (
     <>
-      <Card style={{ width: '100%', margin: '1%', height: '8rem', boxshadow: 'lightblue' }}>
+      <Card style={{ width: '100%', margin: '1%', height: '8rem', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)' }}>
         <Row style={{padding: '5%', width: '100%', height: '100%'}}>
         <Col md='4'>
           <Card.Img variant="top" src={Image} style={{ height: '4rem', width: 'auto' }} />
@@ -37,6 +37,7 @@ function CartItemCard() {
         </Col>
         </Row>
       </Card>
+      
     </>
   );
 }
