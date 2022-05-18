@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -20,7 +20,7 @@ const Incrementer = (props) => {
             </Button>
           </Col>
           <Col md='4'>
-            <Form.Control type="integer"   input={value} />
+            <InputGroup type="integer" input={value} />
           </Col>
           <Col md='4'>
             <Button variant="outline-dark" aria-label="add to shopping cart" onClick={onIncrement}> +
