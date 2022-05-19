@@ -1,5 +1,12 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
+import OrderDetailsCard from '../components/OrderDetailsCard/OrderDetailsCard';
+
+
+
+
+
+
 
 
 
@@ -8,23 +15,13 @@ import Card from 'react-bootstrap/Card';
 function OrderDetails() {
     return (
       <>
-      <div style={{ width: '100%', margin: '5%', }}>
-          <Card style={{ width: '80%', padding: '5%', margin: '5%', height: '100%', boxshadow: 'lightblue' }}>
-                      <Card.Img variant="top" src="" style={{height: 'auto', width: 'auto'}}/>
-                      <Card.Body>
-                        <Card.Title>Order #</Card.Title>
-                        <Card.Text>Items</Card.Text>
-                                                          
-                        <Card.Text >
-                         total
-                        </Card.Text>
-                        <Card.Text >
-                         shipping
-                        </Card.Text>
-                        
-                      </Card.Body>
-                    </Card>
-                    </div>
+      <div>
+        <Card style={{ padding: '1rem', margin: '1rem', boxShadow: '12px 12px 2px 1px rgba(0, 0, 255, .2)' }}>
+        <Card.Title>Thanks for your Order!</Card.Title>
+        <OrderDetailsCard />
+      
+        </Card>
+      </div>
       </>
     );
   }

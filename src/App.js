@@ -7,7 +7,6 @@ import Cart from './routes/Cart';
 import Checkout from './routes/Checkout';
 import Login from './routes/LogIn';
 import OrderDetails from './routes/OrderDetails';
-import Orders from './routes/Orders';
 import ProductDetails from './routes/ProductDetails';
 import Register from './routes/Register';
 
@@ -32,7 +31,6 @@ function App() {
         <Route path="checkout" element={<Checkout />} />
         <Route path="login" element={<Login />} />
         <Route path="orderdetails" element={<OrderDetails />} />
-        <Route path="orders" element={<Orders />} />
         <Route path="productdetails" element={<ProductDetails />} />
         <Route path="register" element={<Register />} />
       </Routes>
