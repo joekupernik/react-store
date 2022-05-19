@@ -53,4 +53,4 @@ Your app is ready to be deployed!
 
 ## Enjoy
 
-I am a big hunter gatherer, recreation type. Making things simple so that I can spend more time outside is the name of the game. My hope is that this will do just that for you.  Enjoy the engeneering and then get outside and enjoyt the world! 
+I am a big recreation type. Making things simple so that I can spend more time outside is the name of the game. My hope is that this will do just that for you.  Enjoy the engeneering and then get outside and enjoyt the world! 
