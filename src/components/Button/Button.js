@@ -5,7 +5,7 @@ import Spinner from 'react-bootstrap/Spinner';
 
 function Button (props) {
 
-  const { children, isLoading, ...rest } = props;
+  const { children, isLoading,  } = props;
 
   return (
       <Button {...rest}>
